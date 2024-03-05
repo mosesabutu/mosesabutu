@@ -1,33 +1,6 @@
 
 <html lang="en">
 <head>
-  <style>
-  all-browsers {
-    margin: 2px;
-    padding: 6px;
-    background-color: lightgray;
-  }
-  
-  .all-browsers > h1, .browser {
-    margin: 10px;
-    padding: 5px;
-  }
-  
-  .browser {
-    background: aliceblue;
-    color: black;
-  }
-  
-  .browser > h2, p {
-    margin: 4px;
-    font-size: 90%;
-    color: black;
-  }
-  .browsercolor{
-      color: black;
-      font-size: 40px;
-  }
-  </style>
   <base target="_blank">
   </head>
     <link rel="stylesheet" href="style.css">
@@ -40,15 +13,17 @@
     <link rel="icon" type="image/x-icon" href="file:///C:/Users/MOSES/Pictures/20221005_145750.jpg">
 </head>
 <body id="top">
-  <h1><header style="font-size: 120%; color: aliceblue; font-family: Arial, Helvetica, sans-serif;"><b>Hey I'm Moses A.</b></header></h1>
-  <nav style="text-align: center;">
-    <a href="#city">Cities in the world</a>
-    <a href="#mutd">Manchester United players</a>
-    <a href="#Chaters">See chapters</a>
-    <a href="#maths" target="_self">Learn maths</a>
-    <a href="#articles" target="_self">Read about browsers</a>
-    <a href="#form" target="_self" title="Forms">Forms</a>
+  <div class="sticky">
+  <nav>
+    <a href="#city" target="_self" id="nav">Cities in the world</a>
+    <a href="#mutd" target="_self" id="nav">Manchester United players</a>
+    <a href="#Chaters" target="_self" id="nav">See chapters</a>
+    <a href="#maths" target="_self" id="nav">Learn maths</a>
+    <a href="#articles" target="_self" id="nav">Read about browsers</a>
+    <a href="#form" target="_self" title="Forms" id="nav">Forms</a>
   </nav>
+</div>
+  <h1 ><header><b>Hey👋  I'm Moses A.</b></header></h1>
        <!--<pre font-family="courier">
         <del>My Bonnie lies over the ocean.</del>
       
@@ -73,15 +48,15 @@
         <p>Tokyo is the capital of Japan.</p>
         </div>
         <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#Chapter 23">Jump to chapter 23</a></li>
+        <li><a href="#home" target="_self">Home</a></li>
+        <li><a href="#news" target="_self">News</a></li>
+        <li><a href="#contact" target="_self">Contact</a></li>
+        <li><a href="#about" target="_self">About</a></li>
+        <li><a href="#Chapter 23" target="_self">Jump to chapter 23</a></li>
         </ul>
        
-       <table style="width:100%" id="mutd">
-         <caption style="color: aliceblue; font-size: 40px;">Man Utd Players</caption>
+       <table id="mutd">
+         <caption id="manu">Man Utd Players</caption>
          <tr style="height: 40px;">
           <th style="width: 20%;">Man utd players</th>
           <th style="width: 10%;">age</th>
@@ -103,15 +78,23 @@
           <td>37</td>
          </tr>
       </table>
+      <br>
      <!--<div style="background-color: rgb(131, 131, 59); width: 1000px; text-align: center; margin-right: 100%;">-->
       <aside>
-        <var style=" width: 30%; font-size: 20px; float: right; padding-left: 20px; margin-left: 25px; background-color: lightgrey;">The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</var>
+        <var>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</var>
         </aside>
+        <br>
+        <br>
         <figure>
-          <img src="20221001_153320 (1).jpg" alt="Delight medis" style="width:100%">
-          <figcaption style="font-size: 30px; color: aliceblue;">Fig 1. - Delight media cover photo</figcaption>
+          <br>
+          <img src="20221001_153320 (1).jpg" alt="Delight media" style="width:100%">
+          <figcaption  class="dm" style="font-size: 30px; color: aliceblue;">Fig 1. - Delight media cover photo</figcaption>
         </figure>
-       <h2 id="Chaters">Chapter 1</h2>
+<div class="chapter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum lectus turpis, ut malesuada tortor lacinia a. Donec mattis dolor tempus, sodales ex at, pharetra justo. Nunc et felis et nisl maximus vulputate eu nec neque. Suspendisse consectetur lectus eget tincidunt tincidunt. Etiam molestie eu lacus ac fermentum. Ut at ipsum dictum est faucibus interdum. Integer maximus ligula id eros posuere consectetur. Morbi nec efficitur leo, consectetur maximus enim. Vivamus semper massa at ante pharetra, commodo elementum massa volutpat. Duis eget sagittis sem, eu faucibus velit. Aenean rhoncus tristique risus, quis accumsan dolor viverra scelerisque. Praesent mollis at lorem eget pretium</div>       
+<br>
+<br>
+<div class="test">
+<h2 id="Chaters">Chapter 1</h2>
 <p>This chapter explains ba bla bla</p>
 
 <h2>Chapter 2</h2>
@@ -173,7 +156,6 @@
 
 <h2>Chapter 21</h2>
 <p>This chapter explains ba bla bla</p>
-
 <h2>Chapter 22</h2>
 <p>This chapter explains ba bla bla</p>
 <h2  id="Chapter 23">Chapter 23</h2>
@@ -184,29 +166,38 @@
   <dt>Goal KeePer</dt>
   <dd>Andre Onana</dd>
  </dl>
-        <p style="font-size: 200%; text-align: center;">I'm passionate about tech</p>
+        <p id="tech">I'm passionate about tech</p>
         <picture>
           <source media="(min-width:1400px)" srcset="425605761_962189891940506_5046464198636165159_n.jpg">
           <source media="(min-width: 700px)" srcset="20221013_153449.png">
           <source media="(min-width:380px)" srcset="20221005_145750.jpg">
-        <img src="425605761_962189891940506_5046464198636165159_n.jpg" usemap="#image_map">
+          <div class="container">
+          <img src="425605761_962189891940506_5046464198636165159_n.jpg" style="width: 1200px; height: 1500px;" usemap="#image_map">
         <map name="image_map">
           <area id="Ramus" alt="Ramus Hojland" target="_blank" title="Ramus Hojland" href="https://en.wikipedia.org/wiki/Rasmus_H%C3%B8jlund" coords="393,228,72" shape="circle" onclick="myFunction()">
           <area id="Grenache" alt="Grenache " target="_blank" title="Grenache " href="https://en.wikipedia.org/wiki/Alejandro_Garnacho" coords="602,258,81" shape="circle" onclick="myFunction()">
           <area id="Kobbie_Mainoo" alt="Kobbie" target="_blank" title="Kobbie" href="https://en.wikipedia.org/wiki/Kobbie_Mainoo" coords="788,239,74" shape="circle" onclick="myFunction()">
-        </map>
-      </picture>
+        </map> 
+        <div class="center">Man Utd Young Stars</div>
+      </div>
+        </picture>
         <script>
             function myFunction() {
               alert("You clicked the man utd player!");
             }
             </script>
-        The image will float to the right of the text.</p>
-        
-          <a href="https://www.facebook.com/mosesaabutu" target="_blank" >Check</a>
-          <button type="button" oneclick="https://twitter.com/mosesaabutu">Visit my facebook</button>
-          <iframe src="demo_iframe.htm" name="iframe_a" title="Watch youtube for free" style="border: none;"></iframe>
-          <a href="https://www.youtube.com/" target="iframe_a">youtube</a>
+            <br>
+    <div class="floatleft">
+        <h5 style="font-size: 30px; color: aliceblue;"><!--<img src="20221005_145750.jpg" alt="DM" style="float: left; margin-left: 2%;">-->Kobbie Boateng Mainoo (born 19 April 2005) is an English professional footballer who plays as a midfielder[3] for Premier League club Manchester United. Mainoo is a graduate of Manchester United's youth system and won the Jimmy Murphy Young Player of the Year award in 2023. He made his first-team debut in an EFL Cup game in January 2023. Mainoo has played youth international football for England at under-17, under-18 and under-19 levels.Early life Born in Stockport, Greater Manchester,[4] Mainoo started his youth career at Cheadle & Gatley Junior Football Club, before joining Manchester United at the age of nine.[5] He is the younger brother of Jordan Hames, who appeared as a contestant on the fifth series of Love Island.[6]</h5>
+      </div>    
+        <br>  
+        <br>
+        <div style="clear: left;">
+        <a href="https://www.facebook.com/mosesaabutu" target="_blank">Check</a>
+          <button type="button" oneclick="https://twitter.com/mosesaabutu" id="button">Visit my facebook</button>
+          <iframe src="https://www.youtube.com/watch?v=9tkOY5NLCGg" name="iframe_a" title="Watch youtube for free" style="border: none;"></iframe>
+          <a href="https://www.youtube.com/watch?v=9tkOY5NLCGg" target="iframe_a">youtube</a>
+        </div>
           <p id="demo">I want to a good software engineer</p>
           <p> Open Windows menu by pressing  <kbd style="font-size: 40px;">Windows Key</kbd></p>
           <p>Message from my computer</p>
@@ -241,14 +232,14 @@
     document.getElementById("demo").style.color = "red";
     }
 </script>
-<button type="button" onclick="myFunction()">Click Me!</button>
+<button type="button" onclick="myFunction()" id="button">Click Me!</button>
 <noscript>Sorry, your browser does not support JavaScript!</noscript>
 <form method="post" id="form">
   <fieldset>
     <legend style="font-size: 30px;">Personal information</legend>
   <div>
     <label for="First name">First name</label>
-    <input style="font-size: 20px;" type="text" id="First name" name="First name" placeholder="Moses" required>
+    <input style="font-size: 20px;" type="text" id="First name" name="First name" placeholder="Moses" required pattern="[A-Za-z]" title="English alphabets only">
     </div>
   <div>
    <label  for="Last name">Last name</label>
@@ -257,7 +248,7 @@
   <br>
   <div>
     <label for="pass" >Password</label>
-    <input style="font-size: 20px;" type="password" id="pass" name="pass" maxlength="20" required>
+    <input style="font-size: 20px;" type="password" id="pass" name="pass" maxlength="20" required pattern="[A-Za-z]{3}" title="Three letter password">>
   </div>
   <br>
   <div>
@@ -267,7 +258,7 @@
   <br>
   <div>
     <label for="date"></label>
-    <input style="font-size: 20px;" type="date" id="date" name="date">
+    <input style="font-size: 20px;" type="date" id="date" name="date" pattern="[0-9]{3}" title="Three letter country date">
   </div>
   <br>
   <div>
@@ -285,7 +276,7 @@
   <br>
   <br>
   <div>
-    <input type="reset">  <input type="submit">
+    <input id="button" type="reset">  <input type="image" src="pngwing.com.png" alt="Submit" width="20px" height="20px">
   </div>
 </fieldset>
 <fieldset>
@@ -299,11 +290,11 @@
     <option value="Opera">
     <option value="Safari">
   </datalist>
-  <input type="submit">
+  <input id="button" type="submit">
   <br>
   <br>
   <label for="cars">Choose a car you love ❤:</label>
-  <select id="cars" name="cars" size="1" style="font-size: 20px;" multiple>
+  <select id="cars" name="cars" size="1" multiple>
     <option value="volvo">Volvo</option>
     <option value="saab">Saab</option>
     <option value="fiat">Fiat</option>
@@ -311,9 +302,51 @@
   </select>
 </fieldset>
 </form>
+<!--<h2>The cursor Property</h2>
+
+<p>Mouse over the words to change the cursor.</p>
+<span style="cursor:auto">auto</span><br>
+<span style="cursor:crosshair">crosshair</span><br>
+<span style="cursor:default">default</span><br>
+<span style="cursor:e-resize">e-resize</span><br>
+<span style="cursor:help">help</span><br>
+<span style="cursor:move">move</span><br>
+<span style="cursor:n-resize">n-resize</span><br>
+<span style="cursor:ne-resize">ne-resize</span><br>
+<span style="cursor:nw-resize">nw-resize</span><br>
+<span style="cursor:pointer">pointer</span><br>
+<span style="cursor:progress">progress</span><br>
+<span style="cursor:s-resize">s-resize</span><br>
+<span style="cursor:se-resize">se-resize</span><br>
+<span style="cursor:sw-resize">sw-resize</span><br>
+<span style="cursor:text">text</span><br>
+<span style="cursor:w-resize">w-resize</span><br>
+<span style="cursor:wait">wait</span><br>
+-->
+<div>
+</div>
+  <br>
+  <div class="clearfix">
+     <div class="box" style="background-color: #bbb;">Moses Abutu</div>
+     <div class="box" style="background-color: #ccc;">Matthew Abutu</div>
+     <div class="box" style="background-color: #ddd;">Micheal Abutu</div>
+  </div>
 <footer>
-  </p><a href="mailto:abutu5225@gmail.com" target="_blank" title="Email us">Email us</a></p>
-  <a href="#top" target="_self">Go back up</a>
+  
+  <a href="mailto:abutu5225@gmail.com" target="_blank" title="Email us">Email us</a>
+  <a  href="#top" target="_self" title="Go up" id="goup"><img class="return" src="system-regular-11-arrow-up (1).gif" alt="Go up"></a>
+  <!--<div id="dropdown">
+    
+  
+  <div id="content">
+      <a href="#city" target="_self" >Cities in the world</a>
+      <a href="#mutd" target="_self">Manchester United players</a>
+      <a href="#Chaters" target="_self" >See chapters</a>
+      <a href="#maths" target="_self" >Learn maths</a>
+      <a href="#articles" target="_self" >Read about browsers</a>
+      <a href="#form" target="_self" title="Forms" >Forms</a>
+  </div>
+  </div>-->
 </footer>
 </body>
 </html>
