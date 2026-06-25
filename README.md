@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 -->
 
 
-Hello, my name is Moses Abutu.
+My name is Moses Abutu.
 I'm a 100-level computer science student and an SWE with three years of experience building high-fidelity applications, with God-tier scalability.
 I'm currently enrolled in an open university, Miva.
 I love to talk to computers 💖
