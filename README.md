@@ -1,4 +1,3 @@
-## Hi there 👋
 
 <!--
 **mosesabutu/mosesabutu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -16,9 +15,5 @@ Here are some ideas to get you started:
 -->
 
 
-My name is Moses Abutu.
-I'm a 200-level computer science student and a SWE with three years of experience building high-fidelity applications, with God-tier scalability.
-I'm currently enrolled in an open university, Miva.
-I love to talk to computers 💖
-Currently learning Spanish on Duolingo.
+##Me gusta hablar con computadoras. 💖
 Email: abutu5225@gmail.com
